@@ -1,0 +1,266 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+    <style>
+        /* General Reset */
+        
+        .auth-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        .auth-container h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #FFD700;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .auth-container h2 {
+            font-size: 1.5rem;
+            color: #eee;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        form {
+            margin-bottom: 15px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #f5f5f5;
+            color: #333;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        form input:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: linear-gradient(90deg, #FFD700, #FFC107);
+            color: #333;
+            font-weight: bold;
+            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        form button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.7);
+        }
+
+        .auth-container .error {
+            color: #ff4f4f;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .auth-container form:nth-child(2) button {
+            background: linear-gradient(90deg, #2196F3, #21CBF3);
+            color: #fff;
+        }
+
+        .auth-container form:nth-child(2) button:hover {
+            box-shadow: 0 5px 15px rgba(33, 203, 243, 0.7);
+        }
+
+        .auth-container button:active {
+            transform: scale(0.98);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .auth-container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Welcome to Transcript Fetcher</h1>
+        <h2>Get Your Transcript with Ease!</h2>
+        <form method="POST" action="{{ url_for('auth') }}">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <button type="submit" name="action" value="signup">Sign Up</button>
+            <button type="submit" name="action" value="login">Log In</button>
+        </form>
+        <form method="GET" action="{{ url_for('guest') }}">
+            <button type="submit">Continue as Guest</button>
+        </form>
+    </div>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+    <style>
+        /* General Reset */
+        
+        .auth-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        .auth-container h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #FFD700;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .auth-container h2 {
+            font-size: 1.5rem;
+            color: #eee;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        form {
+            margin-bottom: 15px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #f5f5f5;
+            color: #333;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        form input:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: linear-gradient(90deg, #FFD700, #FFC107);
+            color: #333;
+            font-weight: bold;
+            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        form button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.7);
+        }
+
+        .auth-container .error {
+            color: #ff4f4f;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .auth-container form:nth-child(2) button {
+            background: linear-gradient(90deg, #2196F3, #21CBF3);
+            color: #fff;
+        }
+
+        .auth-container form:nth-child(2) button:hover {
+            box-shadow: 0 5px 15px rgba(33, 203, 243, 0.7);
+        }
+
+        .auth-container button:active {
+            transform: scale(0.98);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .auth-container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Welcome to Transcript Fetcher</h1>
+        <h2>Get Your Transcript with Ease!</h2>
+        <form method="POST" action="{{ url_for('auth') }}">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <button type="submit" name="action" value="signup">Sign Up</button>
+            <button type="submit" name="action" value="login">Log In</button>
+        </form>
+        <form method="GET" action="{{ url_for('guest') }}">
+            <button type="submit">Continue as Guest</button>
+        </form>
+    </div>
+</body>
+>>>>>>> c71ab375b855096a4fc11dec14d4bf4ab9aca485
+</html>

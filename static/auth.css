@@ -1,0 +1,338 @@
+<<<<<<< HEAD
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/auth-backround.jpg") !important;
+    background-size: contain; /* Ensures the whole image fits without cropping */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Auth Container */
+.auth-container {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Form styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #fbc02d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #f9a825;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Register Link */
+p a {
+    color: #fbc02d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Verification Page */
+.verification-page {
+    display: none;
+    margin-top: 20px;
+}
+
+.verification-page h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.verification-page p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.verification-page .btn-primary {
+    display: block;
+    margin: 0 auto;
+}
+/* Continue without Login Link */
+.continue-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.continue-link:hover {
+    color: #fbc02d;
+    text-decoration: underline;
+}
+/* Continue without Login Link */
+.continue-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.continue-link:hover {
+    color: #fbc02d;
+    text-decoration: underline;
+=======
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/auth-backround.jpg") !important;
+    background-size: contain; /* Ensures the whole image fits without cropping */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Auth Container */
+.auth-container {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Form styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #fbc02d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #f9a825;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Register Link */
+p a {
+    color: #fbc02d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Verification Page */
+.verification-page {
+    display: none;
+    margin-top: 20px;
+}
+
+.verification-page h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.verification-page p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.verification-page .btn-primary {
+    display: block;
+    margin: 0 auto;
+}
+/* Continue without Login Link */
+.continue-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.continue-link:hover {
+    color: #fbc02d;
+    text-decoration: underline;
+}
+/* Continue without Login Link */
+.continue-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.continue-link:hover {
+    color: #fbc02d;
+    text-decoration: underline;
+>>>>>>> c71ab375b855096a4fc11dec14d4bf4ab9aca485
+}

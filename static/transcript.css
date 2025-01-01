@@ -1,0 +1,95 @@
+<<<<<<< HEAD
+.transcript-content {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transcript-content p {
+    margin: 10px 0;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* Button Section */
+.button-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-primary {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+=======
+.transcript-content {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transcript-content p {
+    margin: 10px 0;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* Button Section */
+.button-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-primary {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+>>>>>>> c71ab375b855096a4fc11dec14d4bf4ab9aca485

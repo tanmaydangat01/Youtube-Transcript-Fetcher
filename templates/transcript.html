@@ -1,0 +1,73 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Transcript Viewer</h1>
+    </header>
+    
+    <main class="form-section">
+        <!-- Video Player -->
+        <iframe src="{{ video_url }}" frameborder="0" allowfullscreen style="width: 100%; height: 360px;"></iframe>
+
+        <!-- Transcript Section -->
+        <h2>Transcript</h2>
+        <div class="transcript-content">
+            {% if transcript %}
+                <form action="{{ url_for('download') }}" method="POST">
+                    <input type="hidden" name="transcript" value="{% for entry in transcript %}{{ entry.start }}: {{ entry.text }}&#10;{% endfor %}">
+                    <button type="submit">Download Transcript</button>
+                </form>
+                {% for entry in transcript %}
+                    <p><strong>{{ entry.start }}:</strong> {{ entry.text }}</p>
+                {% endfor %}
+            {% else %}
+                <p>No transcript available.</p>
+            {% endif %}
+        </div>
+    </main>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Transcript Viewer</h1>
+    </header>
+    
+    <main class="form-section">
+        <!-- Video Player -->
+        <iframe src="{{ video_url }}" frameborder="0" allowfullscreen style="width: 100%; height: 360px;"></iframe>
+
+        <!-- Transcript Section -->
+        <h2>Transcript</h2>
+        <div class="transcript-content">
+            {% if transcript %}
+                <form action="{{ url_for('download') }}" method="POST">
+                    <input type="hidden" name="transcript" value="{% for entry in transcript %}{{ entry.start }}: {{ entry.text }}&#10;{% endfor %}">
+                    <button type="submit">Download Transcript</button>
+                </form>
+                {% for entry in transcript %}
+                    <p><strong>{{ entry.start }}:</strong> {{ entry.text }}</p>
+                {% endfor %}
+            {% else %}
+                <p>No transcript available.</p>
+            {% endif %}
+        </div>
+    </main>
+</body>
+</html>
+>>>>>>> c71ab375b855096a4fc11dec14d4bf4ab9aca485
