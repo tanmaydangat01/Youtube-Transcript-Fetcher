@@ -3,12 +3,16 @@ from flask import Flask, render_template, request, redirect, url_for, session, m
 from youtube_transcript_api import YouTubeTranscriptApi
 from googleapiclient.discovery import build
 import re
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+API_KEY = os.getenv('API_KEY')
+app.secret_key = os.getenv('SECRET_KEY')
+
 
 app = Flask(__name__)
-app.secret_key = '9f4351efdfae8db71c15a8437c73889f7dcf229d92629f15e81c4d8b6b25f776'
-
-API_KEY = 'AIzaSyAmS6FwEoi0KU2FvOxJIWhcTOVX9i_7Fx4'
-
 users = {}
 
 def get_video_id(url):
