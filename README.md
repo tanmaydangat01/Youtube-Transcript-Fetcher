@@ -60,15 +60,16 @@ Provide AI-generated suggestions and insights based on the transcript.
 Contributions are welcome! Follow these steps to contribute:
 
 Fork the Repository:
-Click on the "Fork" button on the top right of this repository.
-Create a Feature Branch:
-Create a branch for your feature: git checkout -b feature-name.
-Commit Your Changes:
-Commit your changes: git commit -m "Added feature-name".
-Push to the Branch:
-Push the changes: git push origin feature-name.
-Open a Pull Request:
-Submit a pull request for review.
+-Click on the "Fork" button on the top right of this repository.
+-Create a Feature Branch:
+-Create a branch for your feature: git checkout -b feature-name.
+-Commit Your Changes:
+-Commit your changes: git commit -m "Added feature-name".
+-Push to the Branch:
+-Push the changes: git push origin feature-name.
+-Open a Pull Request:
+-Submit a pull request for review.
+
 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
