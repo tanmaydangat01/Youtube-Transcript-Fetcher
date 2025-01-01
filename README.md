@@ -45,6 +45,7 @@ Input YouTube URL:
 Paste the YouTube video URL and optionally specify start and end times.
 Fetch and Download:
 View the transcript, filter specific sections, and download it as a text file.
+
 🌟 Future Enhancements
 Integration of Database:
 Store user credentials, transcript history, and preferences for persistent data management.
@@ -54,7 +55,6 @@ Search Functionality:
 Enable searching for specific words or phrases within transcripts.
 AI Prompt Library:
 Provide AI-generated suggestions and insights based on the transcript.
-📚 System Architecture
 
 🤝 Contribution
 Contributions are welcome! Follow these steps to contribute:
@@ -75,15 +75,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 📬 Contact
 For any queries, reach out via:
 
-Email: your-email@example.com
-GitHub: YourUsername
+Email: tanmaydangat01@gmail.com
+GitHub: tanmaydangat01
 🌟 Thank you for exploring YouTube Transcript Fetcher!
-markdown
-Copy code
 
-### **Instructions to Use the README**
-1. Replace placeholders like `YourUsername`, `your-email@example.com`, and `your_youtube_data_api_key` with your actual GitHub username, email, and API key.
-2. Add a diagram image for the **System Architecture** in a `diagrams/` folder and reference it in the README (`diagrams/system_architecture.png`).
-3. Push this `README.md` along with your project files to your GitHub repository.
-
-Let me know if you need help with any specific part!
